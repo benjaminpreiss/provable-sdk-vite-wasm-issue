@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { initClient } from '$lib/aleo';
-	console.log(initClient);
+	import { onMount } from 'svelte';
+	onMount(() => {
+		initClient();
+	});
 </script>
 
 <h1>Welcome to SvelteKit</h1>
