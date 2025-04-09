@@ -1,15 +1,13 @@
 import {
 	Account,
 	AleoNetworkClient,
-	initializeWasm,
-	initThreadPool,
+	//initThreadPool,
 	NetworkRecordProvider
 } from '@provablehq/sdk';
 
 export async function initClient() {
-	await initializeWasm();
 	// Enables multithreading
-	await initThreadPool();
+	//await initThreadPool();
 	const account = new Account({
 		privateKey: 'APrivateKey1zkp8CZNn3yeCseEtxuVPbDCwSyhGW6yZKUYKfgXmcpoGPWH.'
 	});
